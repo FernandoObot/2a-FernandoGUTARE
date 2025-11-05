@@ -17,9 +17,10 @@ public class LineCounter {
     }
 
     /**
+     * Cuenta las líneas de código no vacías eliminando comentarios y literales de cadena.
      * Firma del diagrama: count(arrData : String[]) : double
-     * Implementación: une las líneas, elimina comentarios y literales
-     * y cuenta las líneas no vacías.
+     * @param arrData arreglo de líneas de texto
+     * @return número de líneas de código (double por compatibilidad UML)
      */
     public double count(String[] arrData) {
         if (arrData == null) return 0.0;

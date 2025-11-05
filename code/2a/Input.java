@@ -11,9 +11,10 @@ public class Input {
             br = new BufferedReader(new FileReader(fileName));
             String line;
             while ((line = br.readLine()) != null) {
-                sb.append(line).append(" ");
+                // conservar saltos de línea para análisis de código fuente
+                sb.append(line).append(System.lineSeparator());
             }
-            data = sb.toString().trim();
+            data = sb.toString();
         } catch (IOException e) {
             System.out.println("Error al leer el archivo: " + e.getMessage());
             data = "";
