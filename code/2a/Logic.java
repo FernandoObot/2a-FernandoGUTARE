@@ -67,6 +67,6 @@ public class Logic {
 
         // Escribir resultados
         OutPut out = new OutPut();
-        out.WriteData(outFile, resultado);
+        out.writeData(outFile, resultado);
     }
 }

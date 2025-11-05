@@ -8,12 +8,12 @@
 public class MethodCounter {
 
   /**
-   * Cuenta métodos en el código fuente Java.
-   * Procedimiento:
-   * - Elimina comentarios y literales de cadena.
-   * - Busca apariciones de `) {` que indiquen el inicio de un bloque de método
-   *   y descarta estructuras de control (if, for, while, switch, catch) y
-   *   clases anónimas (precedidas por `new`).
+  * Cuenta métodos en el código fuente Java.
+  * Procedimiento:
+  * - Elimina comentarios y literales de cadena.
+  * - Busca apariciones de `) {` que indiquen el inicio de un bloque de método
+  *   y descarta estructuras de control (if, for, while, switch, catch) y
+  *   clases anónimas (precedidas por `new`).
    *
    * @param source contenido del archivo Java
    * @return número de métodos detectados
